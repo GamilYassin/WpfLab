@@ -5,22 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfLab"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="400" Width="400">
     <Border Padding="10">
         <StackPanel>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button Content="Apply" Grid.Column="0" Margin="0,0,5,0"/>
-            <Button Content="Reset" Grid.Column="1" Margin="5,0"/>
-            <Button Content="Refresh" Grid.Column="2" Margin="5,0,0,0"/>
-        </Grid>
-
-    </StackPanel>     
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel.Children>
+                        <Button Content="Test 1" Click="Button1_Click" Opacity="0.46" Background="#FF237BCD" Foreground="#FFE6E6EA" />
+                        <Button Content="Tes 2" Click="Button2_Click" />
+                    </StackPanel.Children>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
     </Border>
-    
-
 </Window>
