@@ -7,15 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="400">
     <Border Padding="10">
-        <StackPanel>
-            <Grid>
-                <StackPanel Orientation="Vertical">
-                    <StackPanel.Children>
-                        <Button Content="Test 1" Click="Button1_Click" Opacity="0.46" Background="#FF237BCD" Foreground="#FFE6E6EA" />
-                        <Button Content="Tes 2" Click="Button2_Click" />
-                    </StackPanel.Children>
-                </StackPanel>
-            </Grid>
-        </StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Content="Test Butttonnn" />
+        </Grid>
     </Border>
 </Window>
